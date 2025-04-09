@@ -121,7 +121,7 @@ body {
   /* flex-wrap: wrap; */
   gap: 8px;
   align-items: center;
-  overflow-x: hidden; 
+  /* overflow-x: hidden;  */
 }
 
 
@@ -137,6 +137,9 @@ body {
   white-space: nowrap;
   line-height: 1.4;
   margin-left: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  /* overflow-y: ; */
 }
 
 .genre-tooltip-container {
@@ -227,6 +230,18 @@ body {
   background: #2980b9;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Cinema Hall Styles */
 .cinema-hall {
   max-width: 1200px;
@@ -302,8 +317,8 @@ body {
 }
 
 .seat {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -408,7 +423,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Scrollbar Styling */
 .cinema-grid-container::-webkit-scrollbar {
   height: 8px;
 }
@@ -427,7 +441,6 @@ body {
   background: #555;
 }
 
-/* Responsive Styles */
 @media (min-width: 1200px) {
   .cinema-grid {
     min-width: auto;
@@ -510,6 +523,10 @@ body {
     font-size: 1.8rem;
   }
 
+  .seats-row {
+    gap: 5px;
+  }
+
   .seat {
     width: 28px;
     height: 28px;
@@ -549,4 +566,4 @@ body {
   .session-time {
     align-self: flex-start;
   }
-}
+} 
