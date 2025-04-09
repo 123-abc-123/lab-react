@@ -7,7 +7,6 @@ const CinemaHall = ({ movieId }) => {
   const [selectedSeats, setSelectedSeats] = useState(new Set());
   const [isConfirmed, setIsConfirmed] = useState(false);
 
-  // Generate seats with proper row-based numbering
   useEffect(() => {
     const generatedSeats = [];
     for (let row = 1; row <= rows; row++) {
@@ -39,7 +38,6 @@ const CinemaHall = ({ movieId }) => {
   const handleConfirm = () => {
     if (selectedSeats.size === 0) return;
     setIsConfirmed(true);
-    // In a real app, you would send this to your backend
     console.log('Confirmed seats:', Array.from(selectedSeats));
     alert(`Seats ${Array.from(selectedSeats).join(', ')} confirmed!`);
   };
