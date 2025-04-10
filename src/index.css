@@ -904,22 +904,6 @@ body {
   margin-bottom: var(--spacing-md);
 }
 
-/* .genre-tag {
-  background: rgba(var(--poster-bg-color-rgb), 0.1);
-  color: var(--poster-bg-color, var(--color-primary));
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  border: 1px solid rgba(var(--poster-bg-color-rgb), 0.2);
-  transition: all 0.2s ease;
-}
-
-.genre-tag:hover {
-  background: rgba(var(--poster-bg-color-rgb), 0.2);
-  transform: translateY(-1px);
-} */
-
 .session-time {
   background: rgba(var(--poster-bg-color-rgb), 0.05);
   padding: var(--spacing-sm);
