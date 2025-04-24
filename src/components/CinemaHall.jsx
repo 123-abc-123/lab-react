@@ -136,49 +136,6 @@ const CinemaHall = ({ movieId }) => {
           <h3>Selected Seats: {selectedSeats.size > 0
             ? Array.from(selectedSeats).join(', ')
             : 'None'}</h3>
-
-          {/* {showForm && (
-            <form onSubmit={handleFormSubmit} className="booking-form">
-              <div className="form-group">
-                <label>Name:</label>
-                <input
-                  type="text"
-                  value={userDetails.name}
-                  onChange={(e) => setUserDetails({ ...userDetails, name: e.target.value })}
-                />
-                {errors.name && <span className="error">{errors.name}</span>}
-              </div>
-
-              <div className="form-group">
-                <label>Email:</label>
-                <input
-                  type="email"
-                  value={userDetails.email}
-                  onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })}
-                />
-                {errors.email && <span className="error">{errors.email}</span>}
-              </div>
-
-              <div className="form-group">
-                <label>Phone:</label>
-                <input
-                  type="tel"
-                  value={userDetails.phone}
-                  onChange={(e) => setUserDetails({ ...userDetails, phone: e.target.value })}
-                />
-                {errors.phone && <span className="error">{errors.phone}</span>}
-              </div>
-
-              <div className="form-buttons">
-                <button type="submit" className="confirm-button">
-                  Confirm Booking
-                </button>
-                <button type="button" className="reset-button" onClick={handleReset}>
-                  Cancel
-                </button>
-              </div>
-            </form>
-          )} */}
           {showForm && (
             <div className="modal-overlay">
               <div className="modal-container">
